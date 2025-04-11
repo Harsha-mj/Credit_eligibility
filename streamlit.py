@@ -123,9 +123,9 @@ new_prediction = rf_model.predict(
 
 st.subheader("Predicting the outcome:")
 # predicted_outcome = new_prediction[0]
-if new_prediction[0] == 1:
+if new_prediction[0] == Y:
     st.write("You are eligible")
-elif new_prediction[0] == 0:
+elif new_prediction[0] == N:
     st.write("Sorry, you are not eligible for loan")
 
 
