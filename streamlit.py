@@ -12,7 +12,7 @@ based on various personal and financial characteristics.
 
 # Load the pre-trained Random Forest model
 try:
-    with open("RFmodel.pickle", "rb") as rf_pickle:
+    with open("RFmodel.pkl", "rb") as rf_pickle:
         rf_model = pickle.load(rf_pickle)
 except Exception as e:
     st.error(f"Failed to load model: {e}")
